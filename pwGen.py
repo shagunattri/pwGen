@@ -24,3 +24,13 @@ def run(N):
 
 for i in range(counter):
     run(N)
+
+
+# savef = input("Do you want to save the file? [Y/n]")
+
+# if savef == 'n'
+#     pass
+# else:
+#     fname = input("Enter filename -->")
+#     sys.stdout = open(fname,'wt')
+
