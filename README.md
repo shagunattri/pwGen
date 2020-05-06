@@ -15,6 +15,8 @@ mnml password generator 🗝
 - sys
 
 To run:
+
+### Bash
 ```console
 $ git clone https://github.com/shagunattri/pwGenerator
 
@@ -25,6 +27,9 @@ $ chmod +x pwGenerator.sh
 $ ./pwGenerator.sh
 ```
 
-```python3
+
+### Python3 
+
+```python
 $ python3 pwGen.py
 ```
