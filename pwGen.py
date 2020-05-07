@@ -1,13 +1,9 @@
 import string
 import random
 import sys
-from colorama import init
-init(strip=not sys.stdout.isatty()) 
-from termcolor import cprint 
-from pyfiglet import figlet_format
-
-cprint(figlet_format('pwGen', font='starwars'),
-       'green', 'on_red', attrs=['bold'])
+from pyfiglet import Figlet
+custom_fig = Figlet(font='graffiti')
+print(custom_fig.renderText('pwGen'))
 
 N = int(input("Enter size of string --> "))
 counter = int(input("How many password combinations do you need! --> "))
@@ -33,7 +29,7 @@ def output():
     if savef == 'n':
         print("The generated random string : " + str(run(N)))
     else:
-        sys.stdout = open('pw.txt', 'w')
+        sys.stdout = open('pw.txt', 'w',encoding = 'utf-8')
         with open('pw.txt', mode='r+') as f:
             for i in range(counter):
                 f.write("\n" + str(run(N)))
