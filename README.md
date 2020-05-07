@@ -4,7 +4,6 @@ mnml password generator 🗝
 
 
 ## Written in
-- bash
 - python3
 
 
@@ -16,7 +15,7 @@ mnml password generator 🗝
 
 To run:
 
-### Bash
+<!-- ### Bash
 ```console
 $ git clone https://github.com/shagunattri/pwGenerator
 
@@ -25,7 +24,7 @@ $ cd pwGenerator/
 $ chmod +x pwGenerator.sh
 
 $ ./pwGenerator.sh
-```
+``` -->
 
 
 ### Python3 
@@ -33,3 +32,4 @@ $ ./pwGenerator.sh
 ```python
 $ python3 pwGen.py
 ```
+
