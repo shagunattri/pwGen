@@ -19,6 +19,9 @@ mnml password generator 🗝
 - string
 - random
 - sys
+- colorama
+- figlet
+- termcolor
 
 To run:
 

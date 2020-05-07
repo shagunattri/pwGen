@@ -21,7 +21,6 @@ else:
 
 
 def run(N):
-
     res = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase + string.punctuation, k=N))
     if obs:
         res = res.replace('a', '4').replace('e', '3').replace('i', '!').replace('l', '1').replace('t', '7').replace('s', '$').replace('o', '0')
@@ -36,9 +35,8 @@ def output():
     else:
         sys.stdout = open('pw.txt', 'wt')
         with open('pw.txt', mode='r+') as file:
-            file.write('The generated random string :')
             for i in range(counter):
-                file.write('\n' + str(run(N)))
+                file.write("\n" + str(run(N)))
 
 
 try:
@@ -46,6 +44,5 @@ try:
         output()
 except:
     print('Something went wrong')
-
 finally:
     print('Done')
