@@ -33,10 +33,10 @@ def output():
     if savef == 'n':
         print("The generated random string : " + str(run(N)))
     else:
-        sys.stdout = open('pw.txt', 'wt')
-        with open('pw.txt', mode='r+') as file:
+        sys.stdout = open('pw.txt', 'w')
+        with open('pw.txt', mode='r+') as f:
             for i in range(counter):
-                file.write("\n" + str(run(N)))
+                f.write("\n" + str(run(N)))
 
 
 try:
@@ -45,4 +45,4 @@ try:
 except:
     print('Something went wrong')
 finally:
-    print('Done')
+    pass
