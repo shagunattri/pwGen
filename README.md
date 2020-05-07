@@ -2,6 +2,13 @@
 
 mnml password generator 🗝
 
+```console
+ ______   __     __     ______     ______     __   __    
+/\  == \ /\ \  _ \ \   /\  ___\   /\  ___\   /\ "-.\ \   
+\ \  _-/ \ \ \/ ".\ \  \ \ \__ \  \ \  __\   \ \ \-.  \  
+ \ \_\    \ \__/".~\_\  \ \_____\  \ \_____\  \ \_\\"\_\ 
+  \/_/     \/_/   \/_/   \/_____/   \/_____/   \/_/ \/_/ 
+```
 
 ## Written in
 - python3
@@ -15,16 +22,6 @@ mnml password generator 🗝
 
 To run:
 
-<!-- ### Bash
-```console
-$ git clone https://github.com/shagunattri/pwGenerator
-
-$ cd pwGenerator/
-
-$ chmod +x pwGenerator.sh
-
-$ ./pwGenerator.sh
-``` -->
 
 
 ### Python3 
