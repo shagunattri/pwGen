@@ -20,7 +20,7 @@ mnml password generator 🗝
 - pyfiglet
 
 ## To run:
-```python
+```python3
 $ git clone https://github.com/shagunattri/pwGen.git
 
 $ cd pwGen/
@@ -35,4 +35,4 @@ When contributing to this repository, please first discuss the change you wish t
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
