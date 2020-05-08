@@ -1,4 +1,4 @@
-### pwGenerator🔐
+### pwGen🔐
 
 mnml password generator 🗝
 
@@ -13,23 +13,22 @@ mnml password generator 🗝
 ## Written in
 - python3
 
-
-
 ***Libraries used:***
 - string
 - random
 - sys
-- colorama
-- figlet
-- termcolor
+- pyfiglet
 
-To run:
-
-
-
-### Python3 
-
+## To run:
 ```python
+$ git clone https://github.com/shagunattri/pwGen.git
+
+$ cd pwGen/
+
+$ pip install -r requirements.txt
+
 $ python3 pwGen.py
 ```
+## Contributing
 
+When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
