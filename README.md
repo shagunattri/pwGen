@@ -10,14 +10,19 @@ mnml password generator 🗝
   \/_/     \/_/   \/_/   \/_____/   \/_____/   \/_/ \/_/ 
 ```
 
+
 ## Written in
 - python3
+
+
 
 ***Libraries used:***
 - string
 - random
 - sys
 - pyfiglet
+
+
 
 ## To run:
 ```console
@@ -30,11 +35,13 @@ $ pip install -r requirements.txt
 $ python3 pwGen.py
 ```
 
-### TODO
 
+### TODO
 - [ ] Save passwords inside of a gpg encrypted file whose filename is the title of the website or resource that requires the password.
 - [ ] Copy to Clipboard support.
 - [ ] Maintain a mobile-sync directory inside a git repository.
+
+
 
 ## Contributing
 
