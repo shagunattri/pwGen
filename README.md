@@ -20,7 +20,7 @@ mnml password generator 🗝
 - pyfiglet
 
 ## To run:
-```python3
+```console
 $ git clone https://github.com/shagunattri/pwGen.git
 
 $ cd pwGen/
@@ -29,6 +29,13 @@ $ pip install -r requirements.txt
 
 $ python3 pwGen.py
 ```
+
+### TODO
+
+- [ ] Save passwords inside of a gpg encrypted file whose filename is the title of the website or resource that requires the password.
+- [ ] Copy to Clipboard support.
+- [ ] Maintain a mobile-sync directory inside a git repository.
+
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
