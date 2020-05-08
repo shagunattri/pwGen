@@ -32,3 +32,7 @@ $ python3 pwGen.py
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
