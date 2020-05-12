@@ -14,11 +14,11 @@ choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
 
    
-if choice == 'n' or choice == 'N':
-    pass
+if choice != 'n' or choice != 'N':
+        res = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase + string.punctuation, k=N))
+        res = res.replace('a', '4').replace('e', '3').replace('i', '!').replace('l', '1').replace('t', '7').replace('s', '$').replace('o', '0')
 else:
-    res = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase + string.punctuation, k=N))
-    res = res.replace('a', '4').replace('e', '3').replace('i', '!').replace('l', '1').replace('t', '7').replace('s', '$').replace('o', '0')
+    pass
 
 
 
