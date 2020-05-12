@@ -20,6 +20,7 @@ while nameError:
     except:
         print('Please enter a valid number')
 
+
 choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
 
