@@ -8,12 +8,15 @@ from pyfiglet import Figlet
 custom_ascii = Figlet(font='graffiti')
 print(custom_ascii.renderText('pwGen'))
 
-x = True
+nameError = True
+fileError = True
 
-while x:
+while nameError:
     try:
         N = int(input("[+] Enter size of string --> "))
-        x = False
+        if(N <= 0):
+            raise NameError
+        nameError = False
     except:
         print('Please enter a valid number')
 
@@ -35,25 +38,15 @@ if savef == 'n' or savef == 'N':
     print("[+] The generated random string --> " + str(res))
     print()
 else:
-    filename = input("[+] Input the Filename --> ")
-    with open(filename, mode='w') as f:
-        f.write(res)
-        f.close()
-        
-ctoc = input("[+] Copy password to clipborad? [Y/n] ")
-if ctoc == 'n' or ctoc == 'N':
-    pass
-else:
-    pyperclip.copy(res)
-    print("[+] Password copied to clipboard...")   
-
-entropy = ((log(82)/log(2)) * len(res))
-
-print ('')
-print ('+------------------------------------+---------------------+')
-print ('| Password                           | Entropy             |')
-print ('+------------------------------------+---------------------+')
-print (' %s                           %s                  ' % (res, entropy))
+    while fileError:
+        try:
+            filename = input("[+] Input the Filename --> ")
+            with open(filename, mode='w') as f:
+                f.write(res)
+                f.close()
+            fileError = False
+        except:
+            print('Please enter a valid file name')
 
 
 ctoc = input("[+] Copy password to clipborad? [Y/n] ")
@@ -70,4 +63,3 @@ print('+------------------------------------+---------------------+')
 print('| Password                           | Entropy             |')
 print('+------------------------------------+---------------------+')
 print(' %s                           %s                  ' % (res, entropy))
-
