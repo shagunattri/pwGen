@@ -20,12 +20,28 @@ while nameError:
     except:
         print('Please enter a valid number')
 
+lst = []
+
+n = int(input("Enter number of phrases --> "))
+
+for i in range(0, n):
+    phrases = input('Enter the phrase --> ')
+
+    lst.append(phrases)
+
+print('This is the list for your phrases -->', lst)
 
 choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
 
-res = ''.join(random.choices(string.ascii_uppercase +
-                             string.digits + string.ascii_lowercase + string.punctuation, k=N))
+test = ['pool', '44223', '00-2', 'srm']
+
+# res = ''.join(random.choices(string.ascii_uppercase +
+#                              string.digits + string.ascii_lowercase + string.punctuation, k=N))
+
+# res = ''.join(random.choices(test[0] + test[1] + test[2] + test[3], k=N))
+
+res = ''.join(random.choices(lst, k=N))
 
 if choice == 'n' or choice == 'N':
     pass
