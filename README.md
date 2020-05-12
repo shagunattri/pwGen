@@ -1,18 +1,6 @@
 ### pwGen🔐
 
-mnml password generator 🗝
-
-
-
-```console
-                                        ________               
-                        ________  _  __/  _____/  ____   ____  
-                        \____ \ \/ \/ /   \  ____/ __ \ /    \ 
-                         |  |_> >     /\    \_\  \  ___/|   |  \
-                         |   __/ \/\_/  \______  /\___  >___|  /
-                         |__|                  \/     \/     \/ 
-```
-
+> mnml password generator 🗝
 
 <p align="center">
   <a href="https://github.com/shagunattri/pwgen/pulls">
