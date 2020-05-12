@@ -73,7 +73,7 @@ $ python3 pwGen.py
 - [x] Copy to Clipboard support.
 - [ ] Maintain a mobile-sync directory inside a git repository.
 - [x] Display entropy of generated password
-
+- [ ] Create easy to remember passphrase.
 
 ## Contributing
 
