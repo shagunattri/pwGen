@@ -15,10 +15,10 @@ mnml password generator 🗝
 
 
 <p align="center">
-  <a href="https://github.com/shagunattri/pwgen">
+  <a href="https://github.com/shagunattri/pwgen/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="Pull Requests">
   </a>
-  <a href="LICENSE.md">
+  <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg?longCache=true" alt="MIT License">
   </a>
 </p>
@@ -32,7 +32,7 @@ mnml password generator 🗝
 <div align="center">
   <sub>Created by
   <a href="https://twitter.com/sp3ppr">sp3ppr</a> and
-  <a href="https://github.com/shagunattri/graphs/contributors">contributors</a>
+  <a href="https://github.com/shagunattri/pwGen/graphs/contributors">contributors</a>
 </div>
 
 <br>
@@ -56,7 +56,6 @@ mnml password generator 🗝
 - pyfiglet
 
 
-***** 
 
 ## Installation:
 ```console
@@ -80,7 +79,6 @@ $ python3 pwGen.py
 
 When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
 
-****
 
 ## License
 
