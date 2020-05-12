@@ -14,7 +14,7 @@ choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
 
    
-if choice == 'n':
+if choice == 'n' or choice == 'N':
     pass
 else:
     res = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase + string.punctuation, k=N))
@@ -22,7 +22,7 @@ else:
 
 
 
-if savef == 'n':
+if savef == 'n' or savef == 'N':
     print("[+] The generated random string --> " + str(res))
 else:
     filename = input("[+] Input the Filename --> ")
@@ -32,7 +32,7 @@ else:
 
 
 ctoc = input("[+] Copy password to clipborad? [Y/n] ")
-if ctoc == 'N':
+if ctoc == 'n' or ctoc == 'N':
     pass
 else:
     pyperclip.copy(res)
