@@ -4,25 +4,37 @@ import sys
 import pyperclip
 from math import log
 from pyfiglet import Figlet
+from functools import reduce
 
 custom_ascii = Figlet(font='graffiti')
 print(custom_ascii.renderText('pwGen'))
 
+sizeError = True
 nameError = True
 fileError = True
 
-while nameError:
+while sizeError:
     try:
         N = int(input("[+] Enter size of string --> "))
         if(N <= 0):
+            raise NameError
+        sizeError = False
+    except:
+        print('Please enter a valid number')
+
+print()
+
+while nameError:
+    try:
+        n = int(input("Enter number of phrases --> "))
+        if(n <= 0):
             raise NameError
         nameError = False
     except:
         print('Please enter a valid number')
 
-lst = []
 
-n = int(input("Enter number of phrases --> "))
+lst = []
 
 for i in range(0, n):
     phrases = input('Enter the phrase --> ')
@@ -31,17 +43,17 @@ for i in range(0, n):
 
 print('This is the list for your phrases -->', lst)
 
+combined = reduce(lambda acc, item: acc + "" + item, lst)
+
+print(combined)
+
 choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
-
-test = ['pool', '44223', '00-2', 'srm']
 
 # res = ''.join(random.choices(string.ascii_uppercase +
 #                              string.digits + string.ascii_lowercase + string.punctuation, k=N))
 
-# res = ''.join(random.choices(test[0] + test[1] + test[2] + test[3], k=N))
-
-res = ''.join(random.choices(lst, k=N))
+res = ''.join(random.choices(combined, k=N))
 
 if choice == 'n' or choice == 'N':
     pass
