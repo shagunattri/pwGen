@@ -12,6 +12,7 @@ print(custom_ascii.renderText('pwGen'))
 sizeError = True
 nameError = True
 fileError = True
+combinedError = True
 
 while sizeError:
     try:
@@ -20,30 +21,32 @@ while sizeError:
             raise NameError
         sizeError = False
     except:
-        print('Please enter a valid number')
+        print('Error --> Please enter a valid number')
 
 print()
 
 while nameError:
     try:
-        n = int(input("Enter number of phrases --> "))
+        n = int(input("[+] Enter number of key-word --> "))
         if(n <= 0):
             raise NameError
         nameError = False
     except:
-        print('Please enter a valid number')
+        print('Error --> Please enter a valid number')
 
 
 lst = []
 
-for i in range(0, n):
-    phrases = input('Enter the phrase --> ')
-
-    lst.append(phrases)
-
-print('This is the list for your phrases -->', lst)
-
-combined = reduce(lambda acc, item: acc + "" + item, lst)
+while combinedError:
+    try:
+        for i in range(0, n):
+            key = input('[+] Enter the word --> ')
+            lst.append(key)
+        print('Check: This is the list for your key-word -->', lst)
+        combined = reduce(lambda acc, item: acc + "" + item, lst)
+        combinedError = False
+    except:
+        print('Error --> Please Enter atleast one key-word')
 
 print(combined)
 
