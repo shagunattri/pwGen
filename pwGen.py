@@ -2,8 +2,8 @@ import string
 import random
 import sys
 import pyperclip
+from math import log
 from pyfiglet import Figlet
-
 
 custom_ascii = Figlet(font='graffiti')
 print(custom_ascii.renderText('pwGen'))
@@ -37,3 +37,14 @@ if ctoc == 'n' or ctoc == 'N':
 else:
     pyperclip.copy(res)
     print("[+] Password copied to clipboard...")   
+
+entropy = ((log(82)/log(2)) * len(res))
+
+print ('')
+print ('+------------------------------------+---------------------+')
+print ('| Password                           | Entropy             |')
+print ('+------------------------------------+---------------------+')
+print (' %s                           %s                  ' % (res, entropy))
+
+
+

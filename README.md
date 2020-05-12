@@ -40,7 +40,7 @@ $ python3 pwGen.py
 - [ ] Save passwords inside of a gpg encrypted file whose filename is the title of the website or resource that requires the password.
 - [x] Copy to Clipboard support.
 - [ ] Maintain a mobile-sync directory inside a git repository.
-- [ ] Display entropy of generated password
+- [x] Display entropy of generated password
 
 
 ## Contributing
