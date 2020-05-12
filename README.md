@@ -1,17 +1,7 @@
 ### pwGen🔐
 
-mnml password generator 🗝
+> mnml password generator 🗝
 
-
-
-```console
-                                        ________               
-                        ________  _  __/  _____/  ____   ____  
-                        \____ \ \/ \/ /   \  ____/ __ \ /    \ 
-                         |  |_> >     /\    \_\  \  ___/|   |  \
-                         |   __/ \/\_/  \______  /\___  >___|  /
-                         |__|                  \/     \/     \/ 
-```
 
 
 <p align="center">
@@ -54,6 +44,8 @@ mnml password generator 🗝
 - random
 - sys
 - pyfiglet
+- pyperclip
+- math
 
 
 
@@ -73,7 +65,7 @@ $ python3 pwGen.py
 - [x] Copy to Clipboard support.
 - [ ] Maintain a mobile-sync directory inside a git repository.
 - [x] Display entropy of generated password
-
+- [ ] Generate passphrase that is reasy to remember
 
 ## Contributing
 
