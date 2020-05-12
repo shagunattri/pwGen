@@ -20,7 +20,6 @@ while x:
 choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
 
-
 res = ''.join(random.choices(string.ascii_uppercase +
                              string.digits + string.ascii_lowercase + string.punctuation, k=N))
 
@@ -40,6 +39,21 @@ else:
     with open(filename, mode='w') as f:
         f.write(res)
         f.close()
+        
+ctoc = input("[+] Copy password to clipborad? [Y/n] ")
+if ctoc == 'n' or ctoc == 'N':
+    pass
+else:
+    pyperclip.copy(res)
+    print("[+] Password copied to clipboard...")   
+
+entropy = ((log(82)/log(2)) * len(res))
+
+print ('')
+print ('+------------------------------------+---------------------+')
+print ('| Password                           | Entropy             |')
+print ('+------------------------------------+---------------------+')
+print (' %s                           %s                  ' % (res, entropy))
 
 
 ctoc = input("[+] Copy password to clipborad? [Y/n] ")
@@ -56,3 +70,4 @@ print('+------------------------------------+---------------------+')
 print('| Password                           | Entropy             |')
 print('+------------------------------------+---------------------+')
 print(' %s                           %s                  ' % (res, entropy))
+
