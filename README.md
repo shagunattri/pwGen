@@ -47,6 +47,8 @@
 - pyperclip
 - math
 - functools
+- requests
+- hashlib
 
 
 
