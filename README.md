@@ -47,10 +47,7 @@
 - pyperclip
 - math
 - functools
-- requests
-- hashlib
-
-
+- pwnedpasswords
 
 ## Installation:
 ```console
