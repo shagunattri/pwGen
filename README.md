@@ -46,6 +46,7 @@
 - pyfiglet
 - pyperclip
 - math
+- functools
 
 
 
