@@ -36,8 +36,7 @@
 
 
 ## Screenshots
-![pwgen](https://user-images.githubusercontent.com/29366864/81680839-63838380-9471-11ea-8569-52d7d91374c3.png)
-
+![pwgen](https://user-images.githubusercontent.com/29366864/81793797-7bb5da00-9527-11ea-8da4-ac2403a09b1e.png)
 
 ***Libraries used:***
 - string
@@ -61,11 +60,12 @@ $ python3 pwGen.py
 ```
 
 ### TODO
-- [ ] Save passwords inside a encrypted file whose filename is the title of the website or resource that requires the password.
+- [ ] Save password inside an encrypted file whose filename is the title of the website or resource that requires the password.
 - [x] Copy to Clipboard support.
 - [ ] Maintain a mobile-sync directory inside a git repository.
-- [x] Display entropy of generated password
-- [ ] Generate passphrase that is reasy to remember
+- [x] Display entropy of generated password.
+- [ ] Generate easy to remenber passphrase.
+- [x] Check generated passwords against a pwnedpassword database.
 
 ## Contributing
 

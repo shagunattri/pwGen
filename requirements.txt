@@ -1,3 +1,4 @@
 pyfiglet
 pyperclip
 pwnedpasswords
+functools
