@@ -5,6 +5,7 @@ import pyperclip
 from math import log
 from pyfiglet import Figlet
 from functools import reduce
+from pwCheck import pw_check
 
 custom_ascii = Figlet(font='graffiti')
 print(custom_ascii.renderText('pwGen'))
@@ -47,8 +48,6 @@ while combinedError:
         combinedError = False
     except:
         print('Error --> Please Enter atleast one key-word')
-
-print(combined)
 
 choice = input("[+] Obsfucate the passcode? [Y/n] ")
 savef = input("[+] Do you want to save the file? [Y/n]")
@@ -95,3 +94,7 @@ print('+------------------------------------+---------------------+')
 print('| Password                           | Entropy             |')
 print('+------------------------------------+---------------------+')
 print(' %s                           %s                  ' % (res, entropy))
+
+print()
+
+pw_check(res)
