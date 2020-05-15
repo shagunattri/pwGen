@@ -73,6 +73,20 @@ $ python3 pwGen.py
 - To make pwGen generate unique passwords,we compare it against the [pwnedpasswords](https://pypi.org/project/pwnedpasswords/) database using the pwnedpasswords package.
 - Using the plain_text flag in the package it hashes the generated password and then checks for a hash in the pwnedpassword database to provide results.
 
+
+*According to pwnedpassword package documentation:*
+> No plaintext passwords ever leave your machine using pwnedpasswords.
+> How does that work? Well, the Pwned Passwords v2 API has a pretty cool k-anonymity > implementation.
+
+> From https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/:
+>   Formally, a data set can be said to hold the property of k-anonymity, if for every record in a released table, there are k − 1 other records identical to it.
+
+> This allows us to only provide the first 5 characters of the SHA-1 hash of the password in question. The API then responds with a list of SHA-1 hash suffixes with that prefix. On average, that list > contains 478 results.
+
+> People smarter than I am have used math to prove that 5-character prefixes are sufficient to maintain k-anonymity for this database.
+
+> In short: your plaintext passwords are protected if you use this library. You won't leak enough data to identity which passwords you're searching for.
+
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
