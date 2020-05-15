@@ -67,6 +67,12 @@ $ python3 pwGen.py
 - [ ] Generate easy to remenber passphrase.
 - [x] Check generated passwords against a pwnedpassword database.
 
+
+### Notes
+
+- To make pwGen generate unique passwords,we compare it against the [pwnedpasswords](https://pypi.org/project/pwnedpasswords/) database using the pwnedpasswords package.
+- Using the plain_text flag in the package it hashes the generated password and then checks for a hash in the pwnedpassword database to provide results.
+
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,before making a change.
@@ -74,4 +80,4 @@ When contributing to this repository, please first discuss the change you wish t
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
